@@ -17,8 +17,68 @@ html {
 *, *:before, *:after {
    box-sizing: inherit;
 }
-a{
+.topnav{
    text-decoration: none;
    color:black;
-   /*float:right;*/
+   float:right;
+   padding-right: 90px;
+   word-spacing: 30px;
+
+   
+}
+
+.topnav a:hover{
+   text-decoration: none;
+}
+
+header{
+      background-image:url(../images/header.jpg);
+      height: 1100px;
+      width: 1280px;
+      background-repeat: no-repeat;
+}
+
+h1:before{
+   display: flex;
+   height:3px;
+   width: 48px;
+   color:#f0454c;
+  /* text-align: center;*/
+}
+h1{
+   text-align: center;
+}
+
+a{
+   color:black;
+   text-decoration: none;
+}
+.titre a{
+
+}
+
+body{
+   position:relative;
+   top:-20px;
+   right: -10px;
+}
+header i{
+   color: #f0454c;
+}
+
+header p{
+   /*background-color: #f0454c;*/
+   padding-left: 50px;
+
+}
+
+.team{
+   display: flex;
+}
+
+.figure{
+   display: flex;
+}
+.titres{
+   display: flex;
 }

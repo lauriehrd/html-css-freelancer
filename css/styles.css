@@ -19,30 +19,51 @@ html {
 }
 nav{
    text-decoration: none;
-   color:black;
    float:right;
    padding-right: 90px;
-   word-spacing: 30px;
+   word-spacing: 25px;
+   position: relative;
+   top:30px;
+   font-weight: normal;
 
-
+}
+nav a{
+   color: #465065;
 }
 
 nav a:hover{
    text-decoration: none;
 }
 
+/*nav i{
+word-spacing: 5px;
+}*/
+
 header{
       background-image:url(../images/header.jpg);
       height: 1100px;
-      width: 1280px;
+      width: 1295px;
       background-repeat: no-repeat;
+      background-size: cover;
+}
+header p{
+   color:white;
+   background-color: #f0454c;
+   width: 150px;
+   height:80px;
+   border-radius:10px;
+   float: center;
+   margin-left: 240px;
+   position: relative;
+   font-weight:bold;
+   font-size: 20px;
+   margin-top: 10px;
+   padding-top: 30px;
+   padding-left: 13px;
 }
 
-h1:before{
-   display: flex;
-   height:4px;
-   width: 30px;
-   color:#f0454c;
+h1{
+  font-size: 50px;
 
 }
 
@@ -53,10 +74,11 @@ a{
 
 body{
    position:relative;
-   top:-20px;
-   /*right: -20px;*/
    left:-10px;
    margin-right: 180px;
+   top:-17px;
+   font-family: 'Open Sans', sans-serif;
+  
 }
 header i{
    color: #f0454c;
@@ -70,6 +92,10 @@ header i{
    display: flex;
    padding-top: 60px;
 }
+.figure p{
+color:grey;
+}
+
 .titres{
    display: flex;
 
@@ -81,27 +107,37 @@ header i{
    margin-top: 60px;
 
 }
+
+footer{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
 footer p{
-   text-align: right;
-   padding-top: 30px;
+
    color: #b9c0c6;
+   font-size: 14px;
+   padding-top: 10px;
 }
 
 footer{
-   border-top: 1px solid;
-   margin-top: 50px;
+   border-top: 1px solid lightgrey;
+   margin-top: 90px;
    padding-top: 10px;
    margin-left: 180px;
-   
+   word-spacing: 10px;
+
 }
+
 footer i{
-   padding-top: 30px;
+   padding-top: 25px;
    color: #b9c0c6;
 }
 
 .entete h4{
    color: #465065;
    font-size: 24px;
+   font-weight: normal;
    padding-bottom: 15px;
    font-family: 'Open Sans', sans-serif;
 
@@ -114,6 +150,7 @@ footer i{
    font-size: 15px;
    padding-top: 10px;
    padding: 30px;
+   font-weight: bold;
 
 }
 .team p{
@@ -124,15 +161,10 @@ footer i{
    color: #f0454c;
 }
 
-/*.titres2{
-   display: flex;
-   flex-direction: column;
-   width: 33,33%
-}*/
-
 h3{
    color:#465065;
    font-size: 30px;
+   font-family: 'Montserrat', sans-serif;
 }
 h2{
    color: #465065;
@@ -161,13 +193,14 @@ h2{
    margin-left: 2px;
    position: relative;
    right:58px;
+   margin-top: -50px;
 }
 
 .titres, .presentation, .figure{
    margin-left: 190px;
 }
 
-.presentation{
+.presentation2{
    display: flex;
 }
 
@@ -218,4 +251,15 @@ h2:before{
 }
 .titres h3{
    font-size: 26px;
+}
+
+.presentation a{
+   float: right;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+}
+.fa-instagram{
+   color: black;
+
 }

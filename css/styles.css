@@ -11,13 +11,17 @@
 /* General */
 
 html {
+
    box-sizing: border-box;
 }
 
 *, *:before, *:after {
+
    box-sizing: inherit;
 }
-nav{
+
+nav {
+
    text-decoration: none;
    float:right;
    padding-right: 90px;
@@ -27,34 +31,33 @@ nav{
    font-weight: normal;
 
 }
-nav a{
+
+nav a, h2, h3,.figure h4 {
+
    color: #465065;
 }
 
-nav a:hover{
+nav a:hover {
+
    text-decoration: none;
 }
 
-/*nav i{
-word-spacing: 5px;
-}*/
+header {
 
-header{
-      background-image:url(../images/header.jpg);
-      height: 1100px;
-      width: 1295px;
-      background-repeat: no-repeat;
-      background-size: cover;
+   background-image:url(../images/header.jpg);
+   height: 1100px;
+   width: 1295px;
+   background-size: cover;
 }
-header p{
+
+header p {
+
    color:white;
    background-color: #f0454c;
    width: 150px;
    height:80px;
    border-radius:10px;
-   float: center;
    margin-left: 240px;
-   position: relative;
    font-weight:bold;
    font-size: 20px;
    margin-top: 10px;
@@ -62,79 +65,20 @@ header p{
    padding-left: 13px;
 }
 
-h1{
-  font-size: 50px;
+.titres a, header i,.presentation i,h4,.figure a,.team h4 {
 
+   color:#f0454c;
 }
 
-a{
-   color:black;
-   text-decoration: none;
+.entete {
+
+   position: relative;
+   right:58px;
+   margin-top: -50px;
 }
 
-body{
-   position:relative;
-   left:-10px;
-   margin-right: 180px;
-   top:-17px;
-   font-family: 'Open Sans', sans-serif;
-  
-}
-header i{
-   color: #f0454c;
-}
+.entete h4 {
 
-.team{
-   display: flex;
-}
-
-.figure{
-   display: flex;
-   padding-top: 60px;
-}
-.figure p{
-color:grey;
-}
-
-.titres{
-   display: flex;
-
-}
-.presentation img{
-   border-radius: 60px;
-   width: 120px;
-   height:120px;
-   margin-top: 60px;
-
-}
-
-footer{
-   display:flex;
-   flex-direction: row;
-   justify-content: space-between;
-}
-footer p{
-
-   color: #b9c0c6;
-   font-size: 14px;
-   padding-top: 10px;
-}
-
-footer{
-   border-top: 1px solid lightgrey;
-   margin-top: 90px;
-   padding-top: 10px;
-   margin-left: 180px;
-   word-spacing: 10px;
-
-}
-
-footer i{
-   padding-top: 25px;
-   color: #b9c0c6;
-}
-
-.entete h4{
    color: #465065;
    font-size: 24px;
    font-weight: normal;
@@ -142,7 +86,9 @@ footer i{
    font-family: 'Open Sans', sans-serif;
 
 }
+
 .entete a {
+
    background-color: #f0454c;
    border-radius: 5px;
    float:center;
@@ -153,77 +99,15 @@ footer i{
    font-weight: bold;
 
 }
-.team p{
-   color: #b9c0c6;
-}
 
-.fa-long-arrow-right{
-   color: #f0454c;
-}
+h1 {
 
-h3{
-   color:#465065;
-   font-size: 30px;
-   font-family: 'Montserrat', sans-serif;
-}
-h2{
-   color: #465065;
-   font-size: 40px;
-}
-.presentation p{
-   color:#9aa0ab;
-   font-size: 15px;
+  font-size: 50px;
 
 }
-.team h4{
-   color: #f0454c;
-}
 
-.titre{
-    text-align: center;
-   font-size: 30px;
-   color: #465065;
-   padding: 270px;
-   text-align:left;
-   padding-top: 300px;
-}
+h1:before {
 
-.entete{
-   padding-left: 10px;
-   margin-left: 2px;
-   position: relative;
-   right:58px;
-   margin-top: -50px;
-}
-
-.titres, .presentation, .figure{
-   margin-left: 190px;
-}
-
-.presentation2{
-   display: flex;
-}
-
-.titres a {
-   color:#f0454c;
-}
-
-.figure a{
-   color:#f0454c;
-}
-
-.presentation a,i {
-   color:#f0454c;
-}
-.presentation h4{
-   color: #f0454c;
-}
-
-.figure h4{
-   color: #465065;
-}
-
-h1:before{
    content:"";
    height: 6px;
    width:70px;
@@ -232,7 +116,96 @@ h1:before{
    margin-bottom: 15px;
 }
 
-h2:before{
+h2 {
+
+   font-size: 40px;
+}
+
+
+h2:before {
+
+   content:"";
+   height: 6px;
+   width: 70px;
+   background:#f0454c;
+   display: block;
+   margin-bottom: 10px;
+}
+
+h3 {
+
+   font-size: 30px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+body {
+
+   position:relative;
+   left:-10px;
+   margin-right: 180px;
+   top:-17px;
+   font-family: 'Open Sans', sans-serif;
+  
+}
+
+.team,.titres,.presentation2 {
+
+   display: flex;
+}
+
+.figure {
+
+   display: flex;
+   padding-top: 60px;
+   justify-content: space-between;
+}
+
+.figure p {
+
+color:grey;
+position: relative;
+top: -30px;
+font-size: 16px;
+}
+
+.figure h4 {
+
+   font-weight: normal;
+   position: relative;
+   top: -20px;
+}
+
+.figure a {
+   
+   position: relative;
+   top: -10px;
+
+}
+
+.titre {
+
+   text-align: center;
+   font-size: 30px;
+   color: #465065;
+   padding: 270px;
+   text-align:left;
+   padding-top: 300px;
+}
+
+.titres h3 {
+
+   font-size: 26px;
+}
+
+.titres p {
+
+   background: linear-gradient( to bottom,#465065,#9aa0ab,#b9c0c6 );
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titres h3:before {
+
    content:"";
    height: 6px;
    width: 70px;
@@ -241,25 +214,71 @@ h2:before{
    margin-bottom: 15px;
 }
 
-.titres h3:before{
-    content:"";
-   height: 6px;
-   width: 70px;
-   background:#f0454c;
-   display: block;
-   margin-bottom: 15px;
-}
-.titres h3{
-   font-size: 26px;
-}
+.presentation a {
 
-.presentation a{
    float: right;
    margin-top: 20px;
    margin-bottom: 20px;
+   color:#f0454c;
 
 }
-.fa-instagram{
+
+.presentation img {
+
+   border-radius: 60px;
+   width: 120px;
+   height:120px;
+   margin-top: 60px;
+
+}
+
+.presentation p {
+
+   color:#9aa0ab;
+   font-size: 16px;
+
+}
+
+.titres, .presentation, .figure {
+
+   margin-left: 190px;
+}
+
+.team p {
+
+   color: #b9c0c6;
+}
+
+
+footer {
+
+   display:flex;
+   justify-content: space-between;
+   border-top: 1px solid lightgrey;
+   margin-top: 90px;
+   margin-left: 180px;
+   word-spacing: 10px;
+   color: #b9c0c6;
+   font-size: 14px;
+}
+
+footer p{
+
+   padding-top: 10px;
+}
+
+footer i {
+
+   padding-top: 25px;
+}
+
+.fa-instagram, a {
+
    color: black;
 
+}
+
+a {
+
+   text-decoration: none;
 }

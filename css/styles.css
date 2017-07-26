@@ -25,16 +25,25 @@ nav {
    text-decoration: none;
    float:right;
    padding-right: 90px;
-   word-spacing: 25px;
    position: relative;
+   word-spacing: 20px;
    top:30px;
-   font-weight: normal;
+   font-weight: px;
 
+}
+
+nav i{
+
+   word-spacing: 5px;
 }
 
 nav a, h2, h3,.figure h4 {
 
    color: #465065;
+}
+
+nav a{
+   /*padding: 0 16px;*/
 }
 
 nav a:hover {
@@ -121,6 +130,11 @@ h2 {
    font-size: 40px;
 }
 
+.presentation h2{
+
+   position: relative;
+   bottom: -20px
+}
 
 h2:before {
 
@@ -160,7 +174,7 @@ body {
    justify-content: space-between;
 }
 
-.figure p {
+.figure div {
 
 color:grey;
 position: relative;
@@ -236,6 +250,14 @@ font-size: 16px;
 
    color:#9aa0ab;
    font-size: 16px;
+   position: relative;
+   top: -10px;
+
+}
+.presentation h3{
+ 
+   position: relative;
+   bottom: -25px;
 
 }
 
@@ -272,7 +294,11 @@ footer i {
    padding-top: 25px;
 }
 
-.fa-instagram, a {
+footer a {
+   color:lightgrey;
+}
+
+.fa-instagram{
 
    color: black;
 
@@ -282,3 +308,4 @@ a {
 
    text-decoration: none;
 }
+
